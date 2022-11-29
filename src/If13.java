@@ -22,14 +22,17 @@ public class If13 {
                     if(pozostale>=0) {
                         koszt2 = 59.99 + (minuty - 900)*0.4;
                         roznica = koszt - koszt2;
-                        System.out.println("zaoszczędziłbyś "+roznica+"zł mając pakiet B");
+                        zaokraglenie = (double)Math.round(roznica*100)/100;
+                        System.out.println("zaoszczędziłbyś "+zaokraglenie+"zł mając pakiet B");
                     } else {
                         roznica = koszt - 59.99;
-                        System.out.println("zaoszczędziłbyś "+roznica+"zł mając pakiet B");
+                        zaokraglenie = (double)Math.round(roznica*100)/100;
+                        System.out.println("zaoszczędziłbyś "+zaokraglenie+"zł mając pakiet B");
                     }
                 if (koszt>69.99){
                     roznica = koszt - 69.99;
-                    System.out.println("zaoszczędziłbyś "+roznica+"zł mając pakiet C");
+                    zaokraglenie = (double)Math.round(roznica*100)/100;
+                    System.out.println("zaoszczędziłbyś "+zaokraglenie+"zł mając pakiet C");
                 }
                 }
             }
